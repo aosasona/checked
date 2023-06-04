@@ -1,21 +1,47 @@
-//
-//  ContentView.swift
-//  checked
-//
-//  Created by Ayodeji Osasona on 03/06/2023.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @State
+    private var reminders = Reminder.samples
+    @State
+    private var isAddReminderDialogShown = false
+    
+    private func showAddReminderDialog() {
+        isAddReminderDialogShown.toggle()
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            List ($reminders) { $reminder in
+                HStack {
+                    Image(systemName: reminder.isCompleted
+                          ? "largecircle.fill.circle"
+                          : "circle")
+                    .imageScale(.medium)
+                    .foregroundColor(.accentColor)
+                    .onTapGesture {
+                        reminder.isCompleted.toggle()
+                    }
+                    Text(reminder.title)
+                }
+            }
+            .toolbar() {
+                ToolbarItemGroup (placement: .bottomBar) {
+                    Spacer()
+                    Button(action: showAddReminderDialog) {
+                        HStack {
+                            Image(systemName: "plus.circle.fill")
+                            Text ("Add reminder")
+                        }
+                    }
+                }
+            }
+            .sheet(isPresented: $isAddReminderDialogShown) {
+                AddReminderView { reminder in
+                    reminders.append(reminder)
+                }
+            }
         }
-        .padding()
     }
 }
 

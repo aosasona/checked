@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E23F8F672A2BF52F00274581 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F8F662A2BF52F00274581 /* Reminder.swift */; };
+		E23F8F692A2C161D00274581 /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F8F682A2C161D00274581 /* ReminderView.swift */; };
 		E27C8C882A2BF47900B0DA98 /* checkedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C8C872A2BF47900B0DA98 /* checkedApp.swift */; };
 		E27C8C8A2A2BF47900B0DA98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C8C892A2BF47900B0DA98 /* ContentView.swift */; };
 		E27C8C8C2A2BF47A00B0DA98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E27C8C8B2A2BF47A00B0DA98 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		E23F8F662A2BF52F00274581 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		E23F8F682A2C161D00274581 /* ReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderView.swift; sourceTree = "<group>"; };
 		E27C8C842A2BF47900B0DA98 /* checked.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = checked.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E27C8C872A2BF47900B0DA98 /* checkedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkedApp.swift; sourceTree = "<group>"; };
 		E27C8C892A2BF47900B0DA98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				E27C8C872A2BF47900B0DA98 /* checkedApp.swift */,
 				E27C8C892A2BF47900B0DA98 /* ContentView.swift */,
+				E23F8F682A2C161D00274581 /* ReminderView.swift */,
 				E23F8F662A2BF52F00274581 /* Reminder.swift */,
 				E27C8C8B2A2BF47A00B0DA98 /* Assets.xcassets */,
 				E27C8C8D2A2BF47A00B0DA98 /* Preview Content */,
@@ -142,6 +145,7 @@
 			files = (
 				E23F8F672A2BF52F00274581 /* Reminder.swift in Sources */,
 				E27C8C8A2A2BF47900B0DA98 /* ContentView.swift in Sources */,
+				E23F8F692A2C161D00274581 /* ReminderView.swift in Sources */,
 				E27C8C882A2BF47900B0DA98 /* checkedApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
