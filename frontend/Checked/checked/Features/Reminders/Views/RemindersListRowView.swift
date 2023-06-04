@@ -1,10 +1,3 @@
-//
-//  RemindersListRowView.swift
-//  checked
-//
-//  Created by Ayodeji Osasona on 04/06/2023.
-//
-
 import SwiftUI
 
 struct RemindersListRowView: View {

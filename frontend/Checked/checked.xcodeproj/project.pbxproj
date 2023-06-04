@@ -18,6 +18,7 @@
 		E23F8F842A2C494E00274581 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E23F8F832A2C494E00274581 /* FirebaseFirestore */; };
 		E23F8F862A2C494E00274581 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E23F8F852A2C494E00274581 /* FirebaseFirestoreSwift */; };
 		E23F8F882A2C56D300274581 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E23F8F872A2C56D300274581 /* GoogleService-Info.plist */; };
+		E23F8F8B2A2CE40200274581 /* ReminderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F8F8A2A2CE40200274581 /* ReminderRepository.swift */; };
 		E27C8C882A2BF47900B0DA98 /* CheckedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C8C872A2BF47900B0DA98 /* CheckedApp.swift */; };
 		E27C8C8A2A2BF47900B0DA98 /* RemindersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C8C892A2BF47900B0DA98 /* RemindersListView.swift */; };
 		E27C8C8C2A2BF47A00B0DA98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E27C8C8B2A2BF47A00B0DA98 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		E23F8F732A2C3A0800274581 /* RemindersListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersListRowView.swift; sourceTree = "<group>"; };
 		E23F8F782A2C3E3100274581 /* ReminderToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderToggleStyle.swift; sourceTree = "<group>"; };
 		E23F8F872A2C56D300274581 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E23F8F8A2A2CE40200274581 /* ReminderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderRepository.swift; sourceTree = "<group>"; };
 		E27C8C842A2BF47900B0DA98 /* checked.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = checked.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E27C8C872A2BF47900B0DA98 /* CheckedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckedApp.swift; sourceTree = "<group>"; };
 		E27C8C892A2BF47900B0DA98 /* RemindersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersListView.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 		E23F8F6D2A2C251E00274581 /* Reminders */ = {
 			isa = PBXGroup;
 			children = (
+				E23F8F892A2CE3DE00274581 /* Repositories */,
 				E23F8F752A2C3D5800274581 /* Styles */,
 				E23F8F702A2C253800274581 /* ViewModels */,
 				E23F8F6F2A2C252C00274581 /* Views */,
@@ -105,6 +108,14 @@
 				E23F8F782A2C3E3100274581 /* ReminderToggleStyle.swift */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		E23F8F892A2CE3DE00274581 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				E23F8F8A2A2CE40200274581 /* ReminderRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		E27C8C7B2A2BF47900B0DA98 = {
@@ -225,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E23F8F792A2C3E3100274581 /* ReminderToggleStyle.swift in Sources */,
+				E23F8F8B2A2CE40200274581 /* ReminderRepository.swift in Sources */,
 				E23F8F722A2C335500274581 /* RemindersListViewModel.swift in Sources */,
 				E23F8F742A2C3A0800274581 /* RemindersListRowView.swift in Sources */,
 				E23F8F672A2BF52F00274581 /* Reminder.swift in Sources */,
