@@ -1,10 +1,12 @@
 import SwiftUI
 
-struct ContentView: View {
-    @State
-    private var reminders = Reminder.samples
+struct RemindersListView: View {
+    @StateObject
+    private var viewModel = RemindersListViewModel()
+    
     @State
     private var isAddReminderDialogShown = false
+    
     
     private func showAddReminderDialog() {
         isAddReminderDialogShown.toggle()
@@ -12,18 +14,8 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            List ($reminders) { $reminder in
-                HStack {
-                    Image(systemName: reminder.isCompleted
-                          ? "largecircle.fill.circle"
-                          : "circle")
-                    .imageScale(.medium)
-                    .foregroundColor(.accentColor)
-                    .onTapGesture {
-                        reminder.isCompleted.toggle()
-                    }
-                    Text(reminder.title)
-                }
+            List ($viewModel.reminders) { $reminder in
+                RemindersListRowView(reminder: $reminder)
             }
             .toolbar() {
                 ToolbarItemGroup (placement: .bottomBar) {
@@ -38,15 +30,16 @@ struct ContentView: View {
             }
             .sheet(isPresented: $isAddReminderDialogShown) {
                 AddReminderView { reminder in
-                    reminders.append(reminder)
+                    viewModel.addReminder(reminder)
                 }
             }
+            .tint(.red)
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        RemindersListView()
     }
 }

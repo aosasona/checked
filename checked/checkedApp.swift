@@ -11,7 +11,7 @@ import SwiftUI
 struct checkedApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RemindersListView()
         }
     }
 }
