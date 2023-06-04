@@ -3,6 +3,7 @@ import Foundation
 struct Reminder: Identifiable {
     var id = UUID();
     var title: String;
+    var note = "";
     var isCompleted = false;
 }
 
@@ -13,6 +14,6 @@ extension Reminder {
         Reminder(title: "Create a Github repo"),
         Reminder(title: "Create first screen"),
         Reminder(title: "Commit to GitHub"),
-        Reminder(title: "Do moreeeee!"),
+        Reminder(title: "Do moreeeee!", note: "Learn more stuff and build shit"),
     ]
 }

@@ -3,13 +3,13 @@ import SwiftUI
 struct AddReminderView: View {
     enum Field: Hashable {
         case title
+        case note
     }
     
     @FocusState
     private var focusedField: Field?
     
-    @State
-    private var reminder = Reminder(title:"")
+    @State private var reminder = Reminder(title:"")
     
     @Environment(\.dismiss)
     private var dismiss
@@ -30,6 +30,9 @@ struct AddReminderView: View {
             Form {
                 TextField("Title", text: $reminder.title)
                     .focused($focusedField, equals: .title)
+                TextField("Note", text: $reminder.note, axis: .vertical)
+                    .focused($focusedField, equals: .note)
+                    .lineLimit(5, reservesSpace: true)
             }
             .navigationTitle("Add reminder")
             .navigationBarTitleDisplayMode(.inline)

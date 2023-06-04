@@ -12,17 +12,27 @@ struct RemindersListRowView: View {
     var reminder: Reminder
     
     var body: some View {
-        HStack {
+        let hasNote = !reminder.note.isEmpty
+        
+        HStack(alignment: hasNote ? .top : .center) {
             Toggle(isOn: $reminder.isCompleted) {}
                 .toggleStyle(.reminder)
-            Text(reminder.title)
+            VStack(alignment: hasNote ? .leading : .center, spacing: hasNote ? 6 : 0) {
+                Text(reminder.title)
+                    .strikethrough(reminder.isCompleted)
+                if hasNote {
+                    Text(reminder.note)
+                        .font(.footnote)
+                        .foregroundColor(.gray)
+                }
+            }
         }
     }
 }
 
 struct RemindersListRowView_Previews: PreviewProvider {
     struct Container: View {
-        @State var reminder = Reminder.samples[0]
+        @State var reminder = Reminder.samples[Reminder.samples.count - 1]
         var body: some View {
             List {
                 RemindersListRowView(reminder: $reminder)
