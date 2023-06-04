@@ -29,4 +29,24 @@ class RemindersListViewModel: ObservableObject {
             reminders[idx].isCompleted.toggle()
         }
     }
+    
+    func updateReminder(_ reminder: Reminder) {
+        do {
+            try remindersRepository.updateReminder(reminder)
+        } catch {
+            print(error)
+            errorMessage = error.localizedDescription
+        }
+    }
+    
+    func updateCompleted(_ reminder: Reminder, isCompleted: Bool) {
+        // taking a copy because the reminder passed in here is immutable here by default
+        var modifiedReminder = reminder
+        modifiedReminder.isCompleted = isCompleted
+        updateReminder(modifiedReminder)
+    }
+    
+    func deleteReminder(_ reminder: Reminder) {
+        remindersRepository.removeReminder(reminder)
+    }
 }

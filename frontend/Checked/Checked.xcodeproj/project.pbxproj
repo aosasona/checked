@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E23F8F672A2BF52F00274581 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F8F662A2BF52F00274581 /* Reminder.swift */; };
-		E23F8F692A2C161D00274581 /* AddReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F8F682A2C161D00274581 /* AddReminderView.swift */; };
+		E23F8F692A2C161D00274581 /* EditReminderDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F8F682A2C161D00274581 /* EditReminderDetailsView.swift */; };
 		E23F8F722A2C335500274581 /* RemindersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F8F712A2C335500274581 /* RemindersListViewModel.swift */; };
 		E23F8F742A2C3A0800274581 /* RemindersListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F8F732A2C3A0800274581 /* RemindersListRowView.swift */; };
 		E23F8F792A2C3E3100274581 /* ReminderToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F8F782A2C3E3100274581 /* ReminderToggleStyle.swift */; };
@@ -19,6 +19,7 @@
 		E23F8F862A2C494E00274581 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E23F8F852A2C494E00274581 /* FirebaseFirestoreSwift */; };
 		E23F8F882A2C56D300274581 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E23F8F872A2C56D300274581 /* GoogleService-Info.plist */; };
 		E23F8F8B2A2CE40200274581 /* ReminderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F8F8A2A2CE40200274581 /* ReminderRepository.swift */; };
+		E23F8F8E2A2D302300274581 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = E23F8F8D2A2D302300274581 /* Factory */; };
 		E27C8C882A2BF47900B0DA98 /* CheckedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C8C872A2BF47900B0DA98 /* CheckedApp.swift */; };
 		E27C8C8A2A2BF47900B0DA98 /* RemindersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C8C892A2BF47900B0DA98 /* RemindersListView.swift */; };
 		E27C8C8C2A2BF47A00B0DA98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E27C8C8B2A2BF47A00B0DA98 /* Assets.xcassets */; };
@@ -27,13 +28,13 @@
 
 /* Begin PBXFileReference section */
 		E23F8F662A2BF52F00274581 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
-		E23F8F682A2C161D00274581 /* AddReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderView.swift; sourceTree = "<group>"; };
+		E23F8F682A2C161D00274581 /* EditReminderDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditReminderDetailsView.swift; sourceTree = "<group>"; };
 		E23F8F712A2C335500274581 /* RemindersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersListViewModel.swift; sourceTree = "<group>"; };
 		E23F8F732A2C3A0800274581 /* RemindersListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersListRowView.swift; sourceTree = "<group>"; };
 		E23F8F782A2C3E3100274581 /* ReminderToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderToggleStyle.swift; sourceTree = "<group>"; };
 		E23F8F872A2C56D300274581 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E23F8F8A2A2CE40200274581 /* ReminderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderRepository.swift; sourceTree = "<group>"; };
-		E27C8C842A2BF47900B0DA98 /* checked.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = checked.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E27C8C842A2BF47900B0DA98 /* Checked.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checked.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E27C8C872A2BF47900B0DA98 /* CheckedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckedApp.swift; sourceTree = "<group>"; };
 		E27C8C892A2BF47900B0DA98 /* RemindersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersListView.swift; sourceTree = "<group>"; };
 		E27C8C8B2A2BF47A00B0DA98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +49,7 @@
 				E23F8F862A2C494E00274581 /* FirebaseFirestoreSwift in Frameworks */,
 				E23F8F802A2C494E00274581 /* FirebaseAnalyticsSwift in Frameworks */,
 				E23F8F842A2C494E00274581 /* FirebaseFirestore in Frameworks */,
+				E23F8F8E2A2D302300274581 /* Factory in Frameworks */,
 				E23F8F822A2C494E00274581 /* FirebaseAuth in Frameworks */,
 				E23F8F7E2A2C494E00274581 /* FirebaseAnalytics in Frameworks */,
 			);
@@ -88,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				E27C8C892A2BF47900B0DA98 /* RemindersListView.swift */,
-				E23F8F682A2C161D00274581 /* AddReminderView.swift */,
+				E23F8F682A2C161D00274581 /* EditReminderDetailsView.swift */,
 				E23F8F732A2C3A0800274581 /* RemindersListRowView.swift */,
 			);
 			path = Views;
@@ -129,7 +131,7 @@
 		E27C8C852A2BF47900B0DA98 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E27C8C842A2BF47900B0DA98 /* checked.app */,
+				E27C8C842A2BF47900B0DA98 /* Checked.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,9 +159,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E27C8C832A2BF47900B0DA98 /* checked */ = {
+		E27C8C832A2BF47900B0DA98 /* Checked */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E27C8C922A2BF47A00B0DA98 /* Build configuration list for PBXNativeTarget "checked" */;
+			buildConfigurationList = E27C8C922A2BF47A00B0DA98 /* Build configuration list for PBXNativeTarget "Checked" */;
 			buildPhases = (
 				E27C8C802A2BF47900B0DA98 /* Sources */,
 				E27C8C812A2BF47900B0DA98 /* Frameworks */,
@@ -169,16 +171,17 @@
 			);
 			dependencies = (
 			);
-			name = checked;
+			name = Checked;
 			packageProductDependencies = (
 				E23F8F7D2A2C494E00274581 /* FirebaseAnalytics */,
 				E23F8F7F2A2C494E00274581 /* FirebaseAnalyticsSwift */,
 				E23F8F812A2C494E00274581 /* FirebaseAuth */,
 				E23F8F832A2C494E00274581 /* FirebaseFirestore */,
 				E23F8F852A2C494E00274581 /* FirebaseFirestoreSwift */,
+				E23F8F8D2A2D302300274581 /* Factory */,
 			);
 			productName = checked;
-			productReference = E27C8C842A2BF47900B0DA98 /* checked.app */;
+			productReference = E27C8C842A2BF47900B0DA98 /* Checked.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -196,7 +199,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E27C8C7F2A2BF47900B0DA98 /* Build configuration list for PBXProject "checked" */;
+			buildConfigurationList = E27C8C7F2A2BF47900B0DA98 /* Build configuration list for PBXProject "Checked" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -207,12 +210,13 @@
 			mainGroup = E27C8C7B2A2BF47900B0DA98;
 			packageReferences = (
 				E23F8F7C2A2C494E00274581 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E23F8F8C2A2D302300274581 /* XCRemoteSwiftPackageReference "Factory" */,
 			);
 			productRefGroup = E27C8C852A2BF47900B0DA98 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E27C8C832A2BF47900B0DA98 /* checked */,
+				E27C8C832A2BF47900B0DA98 /* Checked */,
 			);
 		};
 /* End PBXProject section */
@@ -241,7 +245,7 @@
 				E23F8F742A2C3A0800274581 /* RemindersListRowView.swift in Sources */,
 				E23F8F672A2BF52F00274581 /* Reminder.swift in Sources */,
 				E27C8C8A2A2BF47900B0DA98 /* RemindersListView.swift in Sources */,
-				E23F8F692A2C161D00274581 /* AddReminderView.swift in Sources */,
+				E23F8F692A2C161D00274581 /* EditReminderDetailsView.swift in Sources */,
 				E27C8C882A2BF47900B0DA98 /* CheckedApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,7 +428,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E27C8C7F2A2BF47900B0DA98 /* Build configuration list for PBXProject "checked" */ = {
+		E27C8C7F2A2BF47900B0DA98 /* Build configuration list for PBXProject "Checked" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E27C8C902A2BF47A00B0DA98 /* Debug */,
@@ -433,7 +437,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E27C8C922A2BF47A00B0DA98 /* Build configuration list for PBXNativeTarget "checked" */ = {
+		E27C8C922A2BF47A00B0DA98 /* Build configuration list for PBXNativeTarget "Checked" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E27C8C932A2BF47A00B0DA98 /* Debug */,
@@ -451,6 +455,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 10.0.0;
+			};
+		};
+		E23F8F8C2A2D302300274581 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -480,6 +492,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E23F8F7C2A2C494E00274581 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestoreSwift;
+		};
+		E23F8F8D2A2D302300274581 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E23F8F8C2A2D302300274581 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

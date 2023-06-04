@@ -17,9 +17,12 @@ struct RemindersListRowView: View {
                     Text(reminder.note)
                         .font(.footnote)
                         .foregroundColor(.gray)
+                        .lineLimit(2)
                 }
             }
+            Spacer()
         }
+        .contentShape(Rectangle())
     }
 }
 
