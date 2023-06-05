@@ -3,6 +3,7 @@ import Combine
 import Factory
 import FirebaseCore
 import FirebaseAuth
+import AuthenticationServices
 
 enum AuthenticationState {
     case unauthenticated
@@ -88,5 +89,15 @@ class AuthenticationViewModel: ObservableObject {
     
     func signOut() {
         authenticationService.signOut()
+    }
+}
+
+extension AuthenticationViewModel {
+    func handleSignInWithAppleRequest(_ request: ASAuthorizationAppleIDRequest) {
+        authenticationService.handleSignInWithAppleRequest(request)
+    }
+    
+    func handleSignInWithAppleCompletion(_ result: Result<ASAuthorization, Error>) async -> Bool {
+        return await authenticationService.handleSignInWithAppleCompletion(result)
     }
 }

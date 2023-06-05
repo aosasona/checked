@@ -37,6 +37,7 @@
 		E27C8C8A2A2BF47900B0DA98 /* RemindersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C8C892A2BF47900B0DA98 /* RemindersListView.swift */; };
 		E27C8C8C2A2BF47A00B0DA98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E27C8C8B2A2BF47A00B0DA98 /* Assets.xcassets */; };
 		E27C8C8F2A2BF47A00B0DA98 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E27C8C8E2A2BF47A00B0DA98 /* Preview Assets.xcassets */; };
+		E2BE77B62A2D8ED900F8E828 /* CryptoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BE77B52A2D8ED900F8E828 /* CryptoUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		E27C8C8B2A2BF47A00B0DA98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E27C8C8E2A2BF47A00B0DA98 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E2BE77B32A2D891700F8E828 /* Checked.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Checked.entitlements; path = Checked/Checked.entitlements; sourceTree = "<group>"; };
+		E2BE77B52A2D8ED900F8E828 /* CryptoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 		E23F8FA12A2D3C8B00274581 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				E2BE77B42A2D8EC400F8E828 /* Utilities */,
 				E23F8FA22A2D3C8B00274581 /* ViewModels */,
 				E23F8FA52A2D3C8B00274581 /* Views */,
 				E23F8FAB2A2D3C8B00274581 /* Services */,
@@ -269,6 +272,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E2BE77B42A2D8EC400F8E828 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E2BE77B52A2D8ED900F8E828 /* CryptoUtils.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -364,6 +375,7 @@
 				E23F8FB42A2D3C8B00274581 /* LoginView.swift in Sources */,
 				E23F8F672A2BF52F00274581 /* Reminder.swift in Sources */,
 				E23F8FB52A2D3C8B00274581 /* UserProfileView.swift in Sources */,
+				E2BE77B62A2D8ED900F8E828 /* CryptoUtils.swift in Sources */,
 				E27C8C8A2A2BF47900B0DA98 /* RemindersListView.swift in Sources */,
 				E23F8FB32A2D3C8B00274581 /* GoogleSignInButton.swift in Sources */,
 				E23F8F692A2C161D00274581 /* EditReminderDetailsView.swift in Sources */,
