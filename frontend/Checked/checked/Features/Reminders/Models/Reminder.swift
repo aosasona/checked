@@ -7,6 +7,7 @@ struct Reminder: Identifiable, Codable {
     var title: String
     var note = ""
     var isCompleted = false
+    var userId: String? = nil
 }
 
 extension Reminder {

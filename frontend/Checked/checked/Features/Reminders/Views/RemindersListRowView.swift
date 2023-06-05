@@ -10,7 +10,7 @@ struct RemindersListRowView: View {
         HStack(alignment: hasNote ? .top : .center) {
             Toggle(isOn: $reminder.isCompleted) {}
                 .toggleStyle(.reminder)
-            VStack(alignment: hasNote ? .leading : .center, spacing: hasNote ? 6 : 0) {
+            VStack(alignment: hasNote ? .leading : .center, spacing: hasNote ? 3 : 0) {
                 Text(reminder.title)
                     .strikethrough(reminder.isCompleted)
                 if hasNote {

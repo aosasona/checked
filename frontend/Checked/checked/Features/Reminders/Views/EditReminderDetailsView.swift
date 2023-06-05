@@ -38,13 +38,17 @@ struct EditReminderDetailsView: View {
                 TextField("Title", text: $reminder.title)
                     .focused($focusedField, equals: .title)
                     .onSubmit {
-                        commit()
+                        if !reminder.title.isEmpty {
+                            commit()
+                        }
                     }
                 TextField("Note", text: $reminder.note, axis: .vertical)
                     .focused($focusedField, equals: .note)
                     .lineLimit(5, reservesSpace: true)
                     .onSubmit {
-                        commit()
+                        if !reminder.title.isEmpty {
+                            commit()
+                        }
                     }
             }
             .navigationTitle(mode == .add ? "Add reminder" : "Details")

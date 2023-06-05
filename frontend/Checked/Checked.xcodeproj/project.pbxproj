@@ -31,6 +31,8 @@
 		E23F8FB72A2D3C8B00274581 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F8FAA2A2D3C8B00274581 /* SignupView.swift */; };
 		E23F8FB82A2D3C8B00274581 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F8FAE2A2D3C8B00274581 /* SettingsViewModel.swift */; };
 		E23F8FB92A2D3C8B00274581 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F8FB02A2D3C8B00274581 /* SettingsView.swift */; };
+		E23F8FBB2A2D40FA00274581 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F8FBA2A2D40FA00274581 /* AuthenticationService.swift */; };
+		E23F8FBD2A2D47B600274581 /* AuthenticationService+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F8FBC2A2D47B600274581 /* AuthenticationService+Injection.swift */; };
 		E27C8C882A2BF47900B0DA98 /* CheckedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C8C872A2BF47900B0DA98 /* CheckedApp.swift */; };
 		E27C8C8A2A2BF47900B0DA98 /* RemindersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C8C892A2BF47900B0DA98 /* RemindersListView.swift */; };
 		E27C8C8C2A2BF47A00B0DA98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E27C8C8B2A2BF47A00B0DA98 /* Assets.xcassets */; };
@@ -56,11 +58,14 @@
 		E23F8FAA2A2D3C8B00274581 /* SignupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		E23F8FAE2A2D3C8B00274581 /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		E23F8FB02A2D3C8B00274581 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E23F8FBA2A2D40FA00274581 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		E23F8FBC2A2D47B600274581 /* AuthenticationService+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthenticationService+Injection.swift"; sourceTree = "<group>"; };
 		E27C8C842A2BF47900B0DA98 /* Checked.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checked.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E27C8C872A2BF47900B0DA98 /* CheckedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckedApp.swift; sourceTree = "<group>"; };
 		E27C8C892A2BF47900B0DA98 /* RemindersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersListView.swift; sourceTree = "<group>"; };
 		E27C8C8B2A2BF47A00B0DA98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E27C8C8E2A2BF47A00B0DA98 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E2BE77B32A2D891700F8E828 /* Checked.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Checked.entitlements; path = Checked/Checked.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +201,8 @@
 		E23F8FAB2A2D3C8B00274581 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E23F8FBA2A2D40FA00274581 /* AuthenticationService.swift */,
+				E23F8FBC2A2D47B600274581 /* AuthenticationService+Injection.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -228,6 +235,7 @@
 		E27C8C7B2A2BF47900B0DA98 = {
 			isa = PBXGroup;
 			children = (
+				E2BE77B32A2D891700F8E828 /* Checked.entitlements */,
 				E27C8C862A2BF47900B0DA98 /* checked */,
 				E27C8C852A2BF47900B0DA98 /* Products */,
 			);
@@ -363,6 +371,8 @@
 				E27C8C882A2BF47900B0DA98 /* CheckedApp.swift in Sources */,
 				E23F8FB82A2D3C8B00274581 /* SettingsViewModel.swift in Sources */,
 				E23F8FB92A2D3C8B00274581 /* SettingsView.swift in Sources */,
+				E23F8FBB2A2D40FA00274581 /* AuthenticationService.swift in Sources */,
+				E23F8FBD2A2D47B600274581 /* AuthenticationService+Injection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +498,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Checked/Checked.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"checked/Preview Content\"";
@@ -523,6 +534,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Checked/Checked.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"checked/Preview Content\"";
