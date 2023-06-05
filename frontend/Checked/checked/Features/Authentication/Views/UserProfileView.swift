@@ -23,26 +23,6 @@ struct UserProfileView: View {
 
   var body: some View {
     Form {
-      Section {
-        VStack {
-          HStack {
-            Spacer()
-            Image(systemName: "person.fill")
-              .resizable()
-              .frame(width: 100 , height: 100)
-              .aspectRatio(contentMode: .fit)
-              .clipShape(Circle())
-              .clipped()
-              .padding(4)
-              .overlay(Circle().stroke(Color.accentColor, lineWidth: 2))
-            Spacer()
-          }
-          Button(action: {}) {
-            Text("edit")
-          }
-        }
-      }
-      .listRowBackground(Color(UIColor.systemGroupedBackground))
       Section("Email") {
         VStack(alignment: .leading) {
           Text("Name")

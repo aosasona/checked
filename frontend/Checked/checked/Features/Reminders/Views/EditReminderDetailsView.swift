@@ -56,7 +56,7 @@ struct EditReminderDetailsView: View {
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     Button(action: commit) {
-                        Text("Add")
+                        Text(mode == .add ? "Add" : "Save")
                     }
                     .disabled(reminder.title.isEmpty)
                 }
